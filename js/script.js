@@ -6,3 +6,20 @@
       this.reset();
     });
   });
+
+// registro
+document.getElementById('form-registro').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Mostrar mensaje
+      const mensaje = document.getElementById('mensaje-confirmacion');
+      mensaje.style.display = 'block';
+
+      // Limpiar formulario
+      this.reset();
+
+      // Ocultar mensaje después de 3 segundos
+      setTimeout(() => {
+        mensaje.style.display = 'none';
+      }, 3000);
+    });
