@@ -9,28 +9,30 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- Navbar Bootstrap -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+    <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
     <div class="container-fluid">
       <a class="navbar-brand" href="./index.html">
-        <img src="./assets/logo.png" alt="Logo Tienda Tech" width="120">
+        <img src="./assets/logos/logo.png" alt="Logo" width="120" class="logo-img">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="./html/productos.html">Tienda</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Soluciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Comunidad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Iniciar sesión</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Registrarse</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/sobre-nosostros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="./html/registro.html">Registrarse</a></li>
         </ul>
       </div>
     </div>
   </nav>
+  <hr />
+
 
   <!-- Sección principal -->
 <div class="portada">
@@ -38,54 +40,49 @@
     <p class="frase-secundaria">Tecnología avanzada, soluciones inteligentes</p>
     <div class="botones">
       <a href="./html/productos.html" class="btn-custom btn-primario">Tienda</a>
-      <a href="#" class="btn-custom btn-secundario">Ofertas</a>
+      <a href="./html/ofertas.html" class="btn-custom btn-secundario">Ofertas</a>
     </div>
   </div>
   <!-- Carrusel Bootstrap -->
-  <div id="carouselExampleIndicators" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/carrusel/Apple-iPhone-16-Pro.png" class="d-block w-100" alt="iphone 16">
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/computador_ph.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/airpods.png" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/iphone.png" class="d-block w-100" alt="...">
-      </div>
+    <div class="carousel-item">
+      <img src="./assets/carrusel/airpods-pro.png" class="d-block w-100" alt="airpods pro">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="carousel-item">
+      <img src="./assets/carrusel/iphone.png" class="d-block w-100" alt="iphone">
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
   <!-- Opiniones -->
   <section class="opiniones-container">
     <h2 class="opiniones-titulo">Opiniones de nuestros clientes</h2>
     <div class="opiniones">
       <div class="opinion-card">
-        <img src="./assets/user1.png" alt="Usuario 1">
+        <img src="./assets/usuarios/usuario-1.png" alt="Usuario 1">
         <h3>Ana Torres</h3>
         <p>⭐️⭐️⭐️⭐️⭐️</p>
         <p>"Excelente servicio, el producto llegó en perfecto estado y muy rápido."</p>
       </div>
       <div class="opinion-card">
-        <img src="./assets/user2.png" alt="Usuario 2">
+        <img src="./assets/usuarios/usuario-2.png" alt="Usuario 2">
         <h3>Carlos Mendoza</h3>
         <p>⭐️⭐️⭐️⭐️</p>
         <p>"Muy buena atención al cliente, y productos de calidad."</p>
       </div>
       <div class="opinion-card">
-        <img src="./assets/user3.png" alt="Usuario 3">
+        <img src="./assets/usuarios/usuario-3.png" alt="Usuario 3">
         <h3>Laura Ruiz</h3>
         <p>⭐️⭐️⭐️⭐️⭐️</p>
         <p>"Compré un portátil y superó mis expectativas. ¡Recomendado!"</p>
@@ -94,49 +91,47 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-left">
-      <img src="./assets/logo.png" alt="TecnoLogy" class="footer-logo">
-      <div class="footer-social">
-        <a href="#"><img src="https://img.freepik.com/psd-premium/icon-3d-redes-sociales-facebook_466778-4384.jpg?semt=ais_hybrid&w=740" alt="Facebook"></a>
-        <a href="#"><img src="https://img.freepik.com/vector-premium/icono-logotipo-vector-instagram-logotipo-redes-sociales_901408-392.jpg?semt=ais_hybrid&w=740" alt="Instagram"></a>
-        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmBOe5LXvimtpMXVQc561qXME8h5xyHrRttw&s" alt="X"></a>
+<footer class="footer  text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <div class="footer-left mb-3">
+      <img src="../assets/logos/logo.png" alt="TecnoLogy" width="120" class="logo-img" />
+      <div class="footer-social mt-2">
+        <a href="#"><img src="../assets/logos/facebook.png" alt="Facebook" width="30" /></a>
+        <a href="#"><img src="../assets/logos/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="#"><img src="../assets/logos/x.png" alt="X" width="30" /></a>
       </div>
     </div>
-  
-    <div class="footer-right">
+    <div class="footer-right d-flex flex-wrap gap-4">
       <div class="footer-section">
-        <h4>Sobre nosotros</h4>
-        <ul>
-          <li><a href="#">Quiénes somos</a></li>
-          <li><a href="#">Misión y visión</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Quiénes somos</a></li>
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Misión y visión</a></li>
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Trabaja con nosotros</a></li>
         </ul>
       </div>
-  
       <div class="footer-section">
-        <h4>Comunidad</h4>
-        <ul>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Foro</a></li>
-          <li><a href="#">Eventos</a></li>
+        <h5>Comunidad</h5>
+        <ul class="list-unstyled">
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Blog</a></li>
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Foro</a></li>
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Eventos</a></li>
         </ul>
       </div>
-  
       <div class="footer-section">
-        <h4>Tienda</h4>
-        <ul>
-          <li><a href="#">Productos</a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="#">Soporte</a></li>
+        <h5>Tienda</h5>
+        <ul class="list-unstyled">
+          <li><a href="./html/productos.html" class="text-light">Productos</a></li>
+          <li><a href="./html/ofertas.html" class="text-light">Ofertas</a></li>
+          <li><a href="./html/sobre-nosostros.html" class="text-light">Soporte</a></li>
         </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
   
-  
-
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

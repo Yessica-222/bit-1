@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalles del Producto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+    <!-- Navbar Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./assets/logos/logo.png" alt="Logo" width="120" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-2">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/productos.html">Tienda</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/sobre-nosostros.html">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/ofertas.html">Ofertas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/login.html">Iniciar sesión</a></li>
+          <li class="nav-item"><a class="nav-link" href="../html/registro.html">Registrarse</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<main class="container my-5">
+  <div class="row">
+    <!-- Carrusel de imágenes -->
+    <div class="col-md-6">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/productos/HP-Laptop-15-12th-Gen-i5-1235U.webp.png" class="d-block w-100" alt="Producto 1">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/productos/hp-14.png" class="d-block w-100" alt="Producto 2">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="Producto 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Información del producto -->
+    <div class="col-md-6">
+      <h2 class="mb-3">Computador Portátil HP Intel Core i5</h2>
+      <p><strong>Precio:</strong> $2.399.000</p>
+      <p class="descripcion">
+        Laptop HP con procesador Intel Core i5 de 12ª generación, 8 GB RAM, 512 GB SSD. Ideal para productividad, estudios y entretenimiento.
+      </p>
+      <ul>
+        <li>Procesador Intel Core i5 de 10 núcleos</li>
+        <li>8 GB de memoria RAM</li>
+        <li>512 GB de almacenamiento SSD</li>
+        <li>Windows 11 preinstalado</li>
+      </ul>
+      <button class="btn btn-primary btn-lg mt-3">Añadir al carrito 🛒</button>
+    </div>
+  </div>
+</main>
+
+
+    <!-- Tabs de Descripción y Características -->
+<ul class="nav nav-tabs mt-3" id="productTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="descripcion-tab" data-bs-toggle="tab" data-bs-target="#descripcion" type="button" role="tab">Descripción</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="caracteristicas-tab" data-bs-toggle="tab" data-bs-target="#caracteristicas" type="button" role="tab">Características</button>
+  </li>
+</ul>
+
+<div class="tab-content mt-3" id="productTabContent">
+  <div class="tab-pane fade show active" id="descripcion" role="tabpanel">
+    <p>
+      Este portátil HP ofrece un rendimiento confiable para todas tus tareas diarias. Ideal para estudiantes, trabajadores remotos y usuarios exigentes que buscan eficiencia y velocidad.
+    </p>
+  </div>
+  <div class="tab-pane fade" id="caracteristicas" role="tabpanel">
+    <ul>
+      <li>Procesador Intel Core i5 de 12va generación</li>
+      <li>8 GB de memoria RAM DDR4</li>
+      <li>512 GB SSD de almacenamiento</li>
+      <li>Pantalla de 15.6" Full HD</li>
+      <li>Sistema operativo Windows 11</li>
+      <li>1 año de garantía</li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Opiniones debajo -->
+  <section class="opiniones-container mt-5">
+    <h2 class="opiniones-titulo">Últimos Comentarios</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="opinion-card p-3 border rounded">
+          <img src="../assets/usuarios/usuario-1.png" alt="Usuario 1" class="img-fluid rounded-circle mb-2" width="60">
+          <h5>Ana Torres</h5>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <p>"Excelente servicio, el producto llegó en perfecto estado y muy rápido."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="opinion-card p-3 border rounded">
+          <img src="../assets/usuarios/usuario-2.png" alt="Usuario 2" class="img-fluid rounded-circle mb-2" width="60">
+          <h5>Carlos Mendoza</h5>
+          <p>⭐️⭐️⭐️⭐️</p>
+          <p>"Muy buena atención al cliente, y productos de calidad."</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="opinion-card p-3 border rounded">
+          <img src="../assets/usuarios/usuario-3.png" alt="Usuario 3" class="img-fluid rounded-circle mb-2" width="60">
+          <h5>Laura Ruiz</h5>
+          <p>⭐️⭐️⭐️⭐️⭐️</p>
+          <p>"Compré un portátil y superó mis expectativas. ¡Recomendado!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <div class="footer-left mb-3">
+      <img src="../assets/logos/logo.png" alt="TecnoLogy" width="120" class="logo-img"/>
+      <div class="footer-social mt-2">
+        <a href="#"><img src="../assets/logos/facebook.png" alt="Facebook" width="30" /></a>
+        <a href="#"><img src="../assets/logos/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="#"><img src="../assets/logos/x.png" alt="X" width="30" /></a>
+      </div>
+    </div>
+    <div class="footer-right d-flex flex-wrap gap-4">
+      <div class="footer-section">
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Quiénes somos</a></li>
+          <li><a href="#" class="text-light">Misión y visión</a></li>
+          <li><a href="#" class="text-light">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Comunidad</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Blog</a></li>
+          <li><a href="#" class="text-light">Foro</a></li>
+          <li><a href="#" class="text-light">Eventos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Tienda</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Productos</a></li>
+          <li><a href="#" class="text-light">Ofertas</a></li>
+          <li><a href="#" class="text-light">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../js/script.js"></script>
+<!-- Iconos Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>
