@@ -12,9 +12,9 @@
   </head>
   <body>
     <!-- Navbar Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom px-3">
+    <nav class="navbar navbar-expand-lg navbar-custom px-3">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="../index.html">
           <img
             src="../assets/logos/logo.png"
             alt="Logo"
@@ -62,13 +62,13 @@
         </div>
       </div>
     </nav>
-    <!-- Contenido principal -->
+       <!-- Contenido principal -->
     <main class="container py-5">
       <div class="row">
-        <!-- Barra lateral -->
+        <!-- Filtros -->
         <aside class="col-12 col-md-3 mb-4">
           <h4>Filtros</h4>
-          <form>
+          <form id="filtro-form">
             <div class="mb-3">
               <label for="buscar" class="form-label">Buscar</label>
               <input
@@ -82,37 +82,35 @@
               <label for="ram" class="form-label">RAM</label>
               <select id="ram" class="form-select">
                 <option value="">Todas</option>
-                <option>4 GB</option>
-                <option>8 GB</option>
-                <option>16 GB</option>
-                <option>32 GB</option>
+                <option value="4">4 GB</option>
+                <option value="8">8 GB</option>
+                <option value="16">16 GB</option>
+                <option value="32">32 GB</option>
               </select>
             </div>
             <div class="mb-3">
               <label for="procesador" class="form-label">Procesador</label>
               <select id="procesador" class="form-select">
                 <option value="">Todos</option>
-                <option>Intel i3</option>
-                <option>Intel i5</option>
-                <option>Intel i7</option>
-                <option>AMD Ryzen 5</option>
-                <option>AMD Ryzen 7</option>
+                <option value="i3">Intel i3</option>
+                <option value="i5">Intel i5</option>
+                <option value="i7">Intel i7</option>
+                <option value="ryzen5">AMD Ryzen 5</option>
+                <option value="ryzen7">AMD Ryzen 7</option>
               </select>
             </div>
             <div class="mb-3">
-              <label for="almacenamiento" class="form-label"
-                >Almacenamiento</label
-              >
+              <label for="almacenamiento" class="form-label">Almacenamiento</label>
               <select id="almacenamiento" class="form-select">
                 <option value="">Todos</option>
-                <option>128 GB</option>
-                <option>256 GB</option>
-                <option>512 GB</option>
-                <option>1 TB</option>
+                <option value="128">128 GB</option>
+                <option value="256">256 GB</option>
+                <option value="512">512 GB</option>
+                <option value="1024">1 TB</option>
               </select>
             </div>
             <div class="mb-3">
-              <label for="precio" class="form-label">Precio máximo</label>
+              <label for="precio" class="form-label">Precio máximo: <span id="precio-valor">3000</span> USD</label>
               <input
                 type="range"
                 class="form-range"
@@ -120,23 +118,22 @@
                 min="0"
                 max="3000"
                 step="100"
+                value="3000"
+                oninput="document.getElementById('precio-valor').textContent = this.value"
               />
-              <span id="precio-valor">0</span> USD
             </div>
             <div class="mb-3">
               <label for="color" class="form-label">Color</label>
               <select id="color" class="form-select">
                 <option value="">Todos</option>
-                <option>Negro</option>
-                <option>Blanco</option>
-                <option>Gris</option>
-                <option>Rojo</option>
-                <option>Azul</option>
+                <option value="negro">Negro</option>
+                <option value="blanco">Blanco</option>
+                <option value="gris">Gris</option>
+                <option value="rojo">Rojo</option>
+                <option value="azul">Azul</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary w-100">
-              Aplicar Filtros
-            </button>
+            <button type="submit" class="btn btn-primary w-100">Aplicar filtro</button>
           </form>
         </aside>
 
@@ -287,60 +284,45 @@
       </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer text-light py-4 mt-5">
-      <div
-        class="container d-flex flex-column flex-md-row justify-content-between"
-      >
-        <div class="footer-left mb-3">
-          <img src="../assets/logos/logo.png" alt="TecnoLogy" width="120" />
-          <div class="footer-social mt-2">
-            <a href="#"
-              ><img
-                src="../assets/logos/facebook.png"
-                alt="Facebook"
-                width="30"
-            /></a>
-            <a href="#"
-              ><img
-                src="../assets/logos/instagram.png"
-                alt="Instagram"
-                width="30"
-            /></a>
-            <a href="#"
-              ><img src="../assets/logos/x.png" alt="X" width="30" class="logo-img"
-            /></a>
-          </div>
-        </div>
-        <div class="footer-right d-flex flex-wrap gap-4">
-          <div class="footer-section">
-            <h5>Sobre nosotros</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-light">Quiénes somos</a></li>
-              <li><a href="#" class="text-light">Misión y visión</a></li>
-              <li><a href="#" class="text-light">Trabaja con nosotros</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h5>Comunidad</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-light">Blog</a></li>
-              <li><a href="#" class="text-light">Foro</a></li>
-              <li><a href="#" class="text-light">Eventos</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h5>Tienda</h5>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-light">Productos</a></li>
-              <li><a href="#" class="text-light">Ofertas</a></li>
-              <li><a href="#" class="text-light">Soporte</a></li>
-            </ul>
-          </div>
-        </div>
+      <!-- Footer -->
+<footer class="footer  text-light py-4 mt-5">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <div class="footer-left mb-3">
+      <img src="../assets/logos/logo.png" alt="TecnoLogy" width="120" class="logo-img" />
+      <div class="footer-social mt-2">
+        <a href="https://www.facebook.com/?_rdr"><img src="../assets/logos/facebook.png" alt="Facebook" width="30" /></a>
+        <a href="https://www.instagram.com/tu_usuario/#"><img src="../assets/logos/instagram.png" alt="Instagram" width="30" /></a>
+        <a href="#"><img src="../assets/logos/x.png" alt="X" width="30" /></a>
       </div>
-    </footer>
-
+    </div>
+    <div class="footer-right d-flex flex-wrap gap-4">
+      <div class="footer-section">
+        <h5>Sobre nosotros</h5>
+        <ul class="list-unstyled">
+          <li><a href="./sobre-nosostros.html" class="text-light">Quiénes somos</a></li>
+          <li><a href="./sobre-nosostros.html" class="text-light">Misión y visión</a></li>
+          <li><a href="./sobre-nosostros.html" class="text-light">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Comunidad</h5>
+        <ul class="list-unstyled">
+          <li><a href="./sobre-nosostros.html" class="text-light">Blog</a></li>
+          <li><a href="./sobre-nosostros.html" class="text-light">Foro</a></li>
+          <li><a href="./sobre-nosostros.html" class="text-light">Eventos</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5>Tienda</h5>
+        <ul class="list-unstyled">
+          <li><a href="./productos.html" class="text-light">Productos</a></li>
+          <li><a href="./ofertas.html" class="text-light">Ofertas</a></li>
+          <li><a href="./sobre-nosostros.html" class="text-light">Soporte</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/script.js"></script>
   </body>
