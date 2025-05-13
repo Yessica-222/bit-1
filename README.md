@@ -1,9 +1,9 @@
 # bit-1
-# 🖥️ tecnoLogy
+# tecnoLogy
 
 **Tecnología avanzada, soluciones inteligentes**
 
-## 📄 Descripción
+## Descripción
 
 **tecnoLogy** es una tienda virtual moderna y visualmente atractiva enfocada en la venta de productos tecnológicos como laptops, smartphones, audífonos, relojes inteligentes y más. Su diseño está optimizado para brindar una experiencia clara, dinámica y amigable al usuario.
 
@@ -24,19 +24,19 @@ El sitio web está estructurado con múltiples secciones que permiten navegar f�
 - **Nombre**: Yessica Alexandra Conejo Muñoz  
 - **GitHub**: [@yessica-222](https://github.com/yessica-222)
 
-## 🌐 Enlace al sitio
+##  Enlace al sitio
 
  [tecnoLogy - Página Web](https://yessica-222.github.io/bit-1/)
 
-## 🖼️ Capturas de pantalla
+##  Capturas de pantalla
 
 > Para mostrar imágenes en tu README, guarda tus capturas en `assets/images/` y usa el siguiente formato:
 
 ###  Página de inicio
 ![Inicio](./assets/figma/image.png)
 
-### 🛍️ Tienda
+###  Tienda
 ![Tienda](./assets/figma/imagen2.png)
 
-### 🔎 Detalle del producto
+###  Detalle del producto
 ![Detalles](./assets/figma/imagen3.png)
