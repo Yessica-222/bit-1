@@ -1,5 +1,4 @@
 body {
-  background-color: transparent;
   background: linear-gradient(135deg, #f5f0ff, #b388eb, #6a1b9a);
   color: #000000;
   font-family: 'Segoe UI', sans-serif;
@@ -78,48 +77,39 @@ body {
 }
 
 /* Opiniones */
-opiniones-container {
-  background-color: transparent; /* Fondo totalmente transparente */
-  padding: 2rem;
+.opiniones-container {
+  background-color: transparent;
+  padding: 60px 20px;
   text-align: center;
 }
 
 .opiniones-titulo {
   font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
+  margin-bottom: 40px;
 }
 
 .opiniones {
+  background-color: transparent;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 30px;
 }
 
 .opinion-card {
-  background-color: transparent; /* También transparente */
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: none; /* Sin sombra si quieres todo limpio */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Opcional: borde tenue */
+  background-color: transparent;
+  padding: 20px;
+  width: 280px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .opinion-card img {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-}
-
-.opinion-card h3 {
-  margin: 0.5rem 0 0.25rem;
-  color: #fff; /* Ajusta según fondo */
-}
-
-.opinion-card p {
-  margin: 0.25rem 0;
-  color: #eee; /* Ajusta para visibilidad */
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
 /* Footer */
