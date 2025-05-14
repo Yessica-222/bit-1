@@ -113,15 +113,13 @@ body {
 }
 
 /* Footer */
-
-.footer {
-  background-color: transparent;
-}
 .footer img {
   max-width: 100%;
   height: auto;
 }
-
+.footer-left{
+  background-color: transparent;
+}
 .footer a {
   text-decoration: none;
 }
